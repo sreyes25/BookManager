@@ -1,0 +1,1751 @@
+Learn Java In One Day and Learn It Well Java for Beginners with Hands-On Project
+
+The only book you need to start coding in Java immediately By Jamie Chan
+
+http://www.learncodingfast.com/java
+
+Copyright © 2016
+
+All rights reserved. No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.
+
+Preface
+
+This book is written to help you learn Java FAST and learn it WELL.
+
+The book does not assume any prior background in coding. If you are an absolute beginner, you'll find that this book explains complex concepts in an easy to understand manner. If you are an experienced coder but new to Java, this book will provide you with enough depth to start coding in Java immediately.
+
+Topics are carefully selected to give you a broad exposure to Java, while not overwhelming you with information overload. These topics include objectoriented programming concepts, error handling techniques, file handling techniques and more. In addition, new features of Java such as lambda expressions are also covered. All examples in the book are carefully chosen to demonstrate each concept so that you can gain a deeper understand of the language.
+
+In addition, as Richard Branson puts it: "The best way of learning about anything is by doing". This book comes with a project where you’ll be guided through the coding of a membership management software from scratch. The project uses concepts covered in the book and gives you a chance to see how it all ties together.
+
+You can download the source code for the project and all the sample programs in this book at
+
+http://www.learncodingfast.com/java
+
+Contact Information
+
+I would love to hear from you.
+
+For feedback or queries, you can contact me at jamie@learncodingfast.com.
+
+
+
+
+
+More Books by Jamie
+
+
+
+Python: Learn Python in One Day and Learn It Well
+
+CSS: Learn CSS in One Day and Learn It Well
+
+
+
+C#: Learn C# in One Day and Learn It Well
+
+Table of Contents
+
+
+
+Chapter 1: Introduction to Java
+
+1.1 What is Java?
+
+1.2 Why Learn Java?
+
+Chapter 2: Getting Ready for Java
+
+2.1 Installing the JDK + NetBeans Bundle
+
+2.1.1 What is JDK?
+
+2.1.2 What is NetBeans?
+
+2.2 How to use this book?
+
+2.3 Your First Java Program
+
+2.4 Basic Structure of a Java Program
+
+2.4.1 Package
+
+2.4.2 The HelloWorld Class
+
+2.4.3 The main() Method
+
+2.5 Comments
+
+Chapter 3: The World of Variables and Operators
+
+3.1 What are variables?
+
+3.2 Primitive Data Types in Java
+
+3.3 Naming a Variable
+
+3.4 Initializing a Variable
+
+3.5 The Assignment Operator
+
+3.6 Basic Operators
+
+3.7 More Assignment Operators
+
+3.8 Type Casting In Java
+
+Chapter 4: Arrays and Strings
+
+4.1 String
+
+4.1.1 String Methods
+
+4.2 Array
+
+4.2.1 Array Methods
+
+4.2.2 Finding Array Length
+
+4.3 Primitive Type vs. Reference Type
+
+4.4 Strings are Immutable
+
+Chapter 5: Making our Program Interactive
+
+5.1 Displaying Output
+
+5.2 Escape Sequences
+
+5.3 Formatting Outputs
+
+5.3.1 Converters
+
+5.3.2 Flags
+
+5.4 Accepting User Input
+
+Chapter 6: Control Flow Statements
+
+6.1 Comparison Operators
+
+6.2 Decision Making Statements
+
+6.2.1 If Statement
+
+6.2.2 Ternary Operator
+
+6.2.3 Switch Statement
+
+6.3 Looping Statements
+
+6.3.1 For Statement
+
+6.3.2 Enhanced For Statement
+
+6.3.4 Do-while Statement
+
+6.4 Branching Statements
+
+6.4.1 Break Statement
+
+6.4.2 Continue Statement
+
+6.5 Exception Handling
+
+6.5.1 Specific Errors
+
+6.5.2 Throwing Exceptions
+
+Chapter 7: Object Oriented Programming Part 1
+
+7.1 What is Object-Oriented Programming?
+
+7.2 Writing our own class
+
+7.2.1 Fields
+
+7.2.2 Methods
+
+7.2.3 Constructors
+
+7.3 Instantiating an Object
+
+7.4 Static
+
+7.5 Advanced Methods Concepts
+
+7.5.1 Using Arrays in Method
+
+7.5.2 Passing Primitive Type vs Reference Type Parameters
+
+Chapter 8: Object-Oriented Programming Part 2
+
+8.1 Inheritance
+
+8.1.1 Writing the Parent Class
+
+8.1.2 Writing the Child Class
+
+8.1.3 The main() method
+
+8.2 Polymorphism
+
+8.3 Abstract Classes and Methods
+
+8.4 Interfaces
+
+8.5 Access Modifiers Revisited
+
+Chapter 9: Collections
+
+9.1 The Java Collections Framework
+
+9.2 Autoboxing and Unboxing
+
+9.3 Lists
+
+9.4 ArrayList
+
+9.4.1 ArrayList Methods
+
+9.5 LinkedList
+
+9.5.1 LinkedList Methods
+
+9.6 Using Lists in our Methods
+
+Chapter 10: File Handling
+
+10.1 Reading a Text File
+
+10.2 Writing to a Text File
+
+10.3 Renaming and Deleting Files
+
+Chapter 11: Advanced Java Topics
+
+11.1 Generics
+
+11.1.1 Bounded Types
+
+11.2 Functional Interfaces and Lambda Expressions
+
+Chapter 12: Project
+
+12.1 Overview
+
+12.2 The Member Class
+
+12.3 The SingleClubMember Class
+
+12.4 The MultiClubMember Class
+
+12.5 The Calculator Interface
+
+12.6 The FileHandler Class
+
+12.7 The MembershipManagement Class
+
+12.8 The JavaProject class
+
+Appendix A
+
+Index
+
+
+
+
+
+Chapter 1: Introduction to Java Welcome to Java programming and thank you so much for choosing my book among the large selection of Java books available.
+
+
+
+Whether you are a seasoned programmer or a complete novice, this book is written to help you learn Java programming fast. Topics are carefully selected to give you a broad exposure to the fundamental concepts of Java while not overwhelming you with information overload. While it is not possible to cover every single Java concept in this book, rest assured that by the end of the book, you should have no problem writing your own Java programs. In fact, we will be coding a program together as part of the project at the end of the book. Ready to start?
+
+Let’s first answer a few questions:
+
+
+
+1.1 What is Java?
+
+Java is an object-oriented programming language developed by James Gosling at Sun Microsystems, which has since been acquired by Oracle Corporation. It was released in 1995 and is currently one of the most popular programming languages in use. It can be used to develop applications for a large variety of environments, such as applications for desktop, web and even mobile devices. One of the main features of Java is that it is platform independent. This means that a program written in Java can be executed on any operating system (such as Windows, Mac or Linux).
+
+Like all modern programming languages, Java code resembles the English language which computers are unable to understand. Therefore, Java code has to be converted into machine code through a process known as compilation. Every computer platform has its own machine code instruction set. Hence, machine code that is compiled for one platform will not work on another platform. Most programming languages (like C and C++) compile written code into machine code directly. As a result, this machine code can
+
+
+
+
+
+only be run on the specific platform that the code is compiled for.
+
+Java does it a little differently.
+
+Instead of compiling into machine code directly, Java compiles all written code into bytecode first. Bytecode is platform independent. That is, there is no difference between the bytecode for Windows, Mac or Linux.
+
+When a user wants to run a Java program, a program inside the user’s computer (known as the Java Virtual Machine or JVM) converts this bytecode into machine code for the specific platform that the user uses.
+
+The advantage of using this two-step compilation process is that it allows Java code to be run on all platforms as long as the computer running the Java program has JVM installed. JVM is free to download and there are different versions for different computer platforms. We’ll learn how to install JVM in the next chapter.
+
+1.2 Why Learn Java?
+
+There are a lot of reasons why one should learn Java. Let’s look at some of the reasons below.
+
+Firstly, Java is currently one of the most popular programming languages in use. According to Oracle, 3 billion devices run Java. Furthermore, Android apps are also developed using Java. With the growing demand for mobile apps, it is safe to say that Java is an essential language to learn if you are interested in becoming a programmer.
+
+Next, Java has syntax and features that resemble other programming languages like C and C++. If you have any prior programming experience, you will find learning Java a breeze. Even if you are totally new to programming, you can rest assured that Java is designed to be a relatively easy language to learn. Most programmers find it easier to learn Java than say, C or C++.
+
+Java is also designed to be platform independent. As mentioned earlier, Java code is compiled into bytecode first, which can be run on any machine that has the Java Virtual Machine. Hence with Java, you can write the code once and run it anywhere you want.
+
+Next, Java is an object-oriented programming (OOP) language. Objectoriented programming is an approach to programming that breaks a programming problem into objects that interact with each other. We’ll be looking at various object-oriented programming concepts in this book. Once you master Java, you will be familiar with these concepts. This will make it easier for you to master other object-oriented programming languages in future.
+
+Convinced that Java is a great language to learn? Let’s move on.
+
+
+
+
+
+Chapter 2: Getting Ready for Java 2.1 Installing the JDK + NetBeans Bundle
+
+Before we can start developing applications in Java, we need to download and install the free JDK + NetBeans bundle provided by Oracle.
+
+
+
+2.1.1 What is JDK?
+
+JDK stands for Java Development Kit and is a free kit provided by Oracle that contains a number of tools to help us develop Java applications. Some of these tools include a compiler to compile our written code into bytecode (javac.exe), an archiver to package and distribute our Java files (jar.exe) and a documentation generator to generate HTML documentation from our Java code (javadoc.exe).
+
+In addition, JDK also includes the Java Runtime Environment (JRE). JRE
+
+contains the JVM mentioned in Chapter 1 and the resources that JVM needs in order to run Java programs.
+
+If you are only interested in running Java programs, all you need is the JRE.
+
+However, since we are also interested in developing Java programs, we need the JDK.
+
+
+
+2.1.2 What is NetBeans?
+
+Besides JDK, we also need to install NetBeans.
+
+NetBeans is an Integrated Development Environment (IDE) that we’ll be using to facilitate our coding process. Strictly speaking, we can develop Java applications without using NetBeans. We can write our code in Notepad (or any other text editor) and compile and execute them using the tools provided in JDK. The screenshot below shows an example of how this can be done.
+
+
+
+However, while it is possible to develop Java applications using the JDK
+
+alone, this process is tedious and error-prone.
+
+To make coding easier, you are strongly encouraged to use an IDE. An IDE
+
+includes a text editor with advanced features for us to write our code, and provides us with a graphical user interface to debug, compile and run our applications. As we’ll see later, these features will help greatly when coding.
+
+The IDE that we’ll be using is NetBeans provided by Oracle.
+
+To download the JDK + NetBeans bundle, head over to
+
+http://www.oracle.com/technetwork/Java/Javase/downloads/jdk-netbeans-jsp-
+
+142931.html
+
+You will be presented with a large number of download options which can be overwhelming at first. The version that you’ll be downloading depends on the operating system that you are using. x86 and x64 refer to the 32-bit and 64-bit operating systems respectively. For instance, if you are using the 32-bit
+
+
+
+
+
+Windows operating system, you’ll be downloading the “Windows x86”
+
+version.
+
+Go ahead and download the application. Once you are done installing it, you are ready to start coding your first Java program.
+
+2.2 How to use this book?
+
+However, before we do that, I would like to highlight the fact that most of the code in Java consists of rather long statements. Hence, some statements may wrap around to the next line in this book. If you have problems reading the code samples, you can download the source code for all the sample programs at http://www.learncodingfast.com/java.
+
+2.3 Your First Java Program
+
+Now, let’s start coding our first program. To do that, let’s launch NetBeans and select File > New Project…. from the top menu bar.
+
+You’ll be prompted with the New Project dialog box. Select Java under Categories and Java Application under Projects. Click Next to continue.
+
+On the next screen, name the project HelloWorld and take note of where the project is stored. Finally, click Finish to create the project.
+
+
+
+You will be presented with a default template that NetBeans created for you automatically. Replace the code in the template with the code below.
+
+Note that line numbers are added for reference and are not part of the actual code. You may want to bookmark this page for easy reference later when we discuss the program. You can also download the source code for this sample program and all other sample programs in this book at
+
+http://www.learncodingfast.com/java.
+
+If you prefer not to type the whole program below, you can just delete all the lines with forward slash (/) and/or asterisk (*) on the left in the template and add lines 6 and 7 to it.
+
+1 package helloworld;
+
+2
+
+3 public class HelloWorld {
+
+4
+
+5 public static void main(String[] args) {
+
+6 //Print the words Hello World on the screen 7 System.out.println("Hello World"); 8 }
+
+9
+
+10 }
+
+However, I strongly encourage you to type the code yourself to get a better feel for how NetBeans works. As you type, you will notice some interesting features of NetBeans. For instance, you’ll see that words are displayed in different colours. This is the software’s way of making our code easier to read. Different words serve different purposes in our program and are thus displayed using different colours. We’ll go into more details in later chapters.
+
+In addition, you will also notice that a box appears near the cursor with some help messages occasionally. That is known as Intellisense. For instance, when you type a period (.) after the word System, a dropdrop list appears to let you know what you can type after the period, with a box that provides further information.
+
+Finally, also note that NetBeans will automatically close brackets for you when you type an opening bracket. For instance, when you type “(“, NetBeans will add the closing bracket “)” for you.
+
+These are some of the features that NetBeans provides to make coding easier for us.
+
+After you finish typing, save the program by selecting File > Save. NetBeans has a “Compile on Save” feature that compiles the code whenever you save it. You can then execute the compiled program by clicking on the Run button at the top menu (refer to image below).
+
+
+
+If your program fails to run, there will be a pop up box with an error message. Click Run Anyway to continue. You will then see a description of the error in the output window (refer to next image). Alternatively, you can also hover your mouse over the red squiggly line in the text editor window.
+
+That will provide you with another clue about what went wrong. Try to identify and correct the mistake and run the program again.
+
+
+
+
+
+If all goes well, you will see the following in the output window.
+
+run:
+
+Hello World
+
+BUILD SUCCESSFUL (total time: 0 seconds)
+
+This program simply displays the words “Hello World” in the output window. The other two sentences are additional information provided by NetBeans and are not part of our program output.
+
+That’s it! You have successfully coded your first program. Give yourself a pat on the shoulders.
+
+The name of the Java file that you just wrote is HelloWorld.java. You can find the name at the top of the text editor window (refer to image above).
+
+2.4 Basic Structure of a Java Program
+
+
+
+
+
+Now, let us do a quick run-through of the basic program that you just coded.
+
+
+
+2.4.1 Package
+
+On the first line, we have the statement
+
+package helloworld;
+
+This statement tells the compiler that the Java file we wrote belongs to the helloworld package.
+
+A package is simply a grouping of related classes and interfaces. Do not worry if you do not know what classes and interfaces are, we’ll cover them in subsequent chapters.
+
+When we write package helloworld; at the top of our file, we are asking the compiler to include this file in the helloworld package. The compiler will then create a folder named “helloworld” and save the file into that folder.
+
+Files that belong to the same package are stored in the same folder.
+
+If you navigate to your “NetBeansProjects” folder now, you’ll find a folder named “HelloWorld”. The “NetBeansProject” folder is normally located in your “Documents” folder. If you can’t find this folder, try searching for it using your computer’s search function.
+
+Within the “HelloWorld” folder, you’ll find a “src” folder that contains the
+
+“helloworld” folder.
+
+This folder stores the files of the helloworld package. It is a convention for us to name our packages in lowercase. Note that Java is a case-sensitive language. Hence, “HelloWorld” is not the same as “helloworld”. Inside the
+
+“helloworld” folder, you’ll find the HelloWorld.java file.
+
+The advantage of declaring packages is that it prevents naming conflicts. Two
+
+
+
+
+
+or more files can have the same name as long as they belong to different packages. This is similar to how you can have two or more files of the same name on your computer as long as you put them in different folders. We’ll learn how to create different packages in Chapter 8.
+
+In addition to packages created by us, Java also comes with a large number of pre-created packages that contain code that we can use in our programs. For instance, code for input and output is bundled in the java.io package while code for implementing the components of a graphical user interface (like buttons, menus, etc) is bundled in the java.awt package. To use these pre-written packages, we need to import them into our programs. We’ll learn how to do that at a later time.
+
+
+
+2.4.2 The HelloWorld Class
+
+Next, let’s move on to the HelloWorld class. We’ll talk more about classes in Chapter 7. For now, just know that in our example, the HelloWorld class starts on line 3 with an opening curly brace and ends on line 10 with a closing curly brace. Curly braces are used extensively in Java to indicate the start and end of a code element. All opening braces in Java must be closed with a corresponding closing brace.
+
+Within the HelloWorld class, we have the main() method which starts on line 5 and ends on line 8.
+
+
+
+2.4.3 The main() Method
+
+The main() method is the entry point of all Java applications. Whenever a Java application is started, the main() method is the first method to be called.
+
+Notice the words String[] args inside the parenthesis of our main() method? This means the main() method can take in an array of strings as input. Do not worry about this for the moment. We’ll cover arrays and input in subsequent chapters.
+
+
+
+
+
+In our example, the main() method contains two lines of code. The first line
+
+//Print the words Hello World on the screen
+
+is known as a comment and is ignored by the compiler.
+
+The second line
+
+System.out.println("Hello World");
+
+displays the line “Hello World” (without quotes) on the output window (located at the bottom of the screen). Note that this statement ends with a semi-colon. All statements in Java must end with a semi-colon (;). This is similar to most of the other programming languages like C and C++.
+
+After the System.out.println("Hello World"); statement, we end our code with two closing braces to close the earlier opening braces.
+
+That’s it! There’s all there is to this simple program.
+
+2.5 Comments
+
+We’ve covered quite a bit in this chapter. You should now have a basic understanding of Java programming and be reasonably comfortable with NetBeans. Before we end this chapter, there’s one more thing to learn -
+
+comments.
+
+We mentioned in the previous section that the line
+
+//Print the words Hello World on the screen
+
+is a comment and is ignored by the compiler.
+
+A comment is actually not part of the program. It is added to our code to make it more readable for other programmers. As such, comments are not compiled into bytecode.
+
+To add comments to our program, we type two forward slashes (//) in front of each line of comment like this
+
+// This is a comment
+
+// This is another comment
+
+// This is yet another comment
+
+Alternatively, we can also use /* … */ for multiline comments like this
+
+/* This is a comment
+
+This is also a comment
+
+This is yet another comment
+
+*/
+
+Comments can also be placed after a statement, like this: System.out.println("Hello"); //prints the word Hello
+
+
+
+
+
+Chapter 3: The World of Variables and Operators Now that you are familiar with NetBeans and have some basic understanding of a Java program, let’s get down to the real stuff. In this chapter, you’ll learn all about variables and operators. Specifically, you’ll learn what variables are and how to name, declare and initialize them. You’ll also learn about the common operations that we can perform on them.
+
+3.1 What are variables?
+
+Variables are names given to data that we need to store and manipulate in our programs. For instance, suppose your program needs to store the age of a user. To do that, we can name this data userAge and declare the variable userAge using the following statement:
+
+int userAge;
+
+This declaration statement first states the data type of the variable, followed by its name. The data type of a variable refers to the type of data that the variable will store (such as whether it’s a number or a piece of text). In our example, the data type is int, which refers to integers. The name of our variable is userAge.
+
+After you declare the variable userAge, your program will allocate a certain area of your computer's memory space to store this data. You can then access and modify this data by referring to it by its name, userAge.
+
+3.2 Primitive Data Types in Java
+
+There are eight basic data types that are predefined in Java. These are known as primitive data types.
+
+The first 4 data types are for storing integers (i.e. numbers with no fractional parts). They are as follows:
+
+byte
+
+The byte data type is used for storing integers from -128 to 127. It uses 1
+
+byte of storage space (this is known as the width or the size of the data type).
+
+We normally use the byte data type if storage space is a concern or if we are certain the value of the variable will not exceed the -128 to 127 range.
+
+For instance, we can use the byte data type to store the age of a user as it is unlikely that the user’s age will ever exceed 127 years old.
+
+short
+
+The short data type uses 2 bytes of storage space and has a range of -32768
+
+to 32767.
+
+int
+
+The int data type uses 4 bytes of storage space and has a range of -231
+
+(-2147483648) to 231-1 (2147483647). It is the most commonly used data type for storing integers as it has the most practical range.
+
+long
+
+The long data type uses 8 bytes of storage space and has a range of -263 to 263-1. It is rarely used unless you really need to store a very large integer (such as the number of inhabitants on Earth). In order to specify a long value, you have to add the suffix “L” to the end of the number. We’ll talk more about suffixes in the next section.
+
+In addition to having data types for storing integers, we also have data types for storing floating point numbers (i.e. numbers with fractional parts). They are:
+
+float
+
+The float data type uses 4 bytes of storage and has a range of approximately
+
+
+
+
+
+negative 3.40282347 x 1038 to positive 3.40282347 x 1038. It has a precision of about 7 digits. This means that if you use float to store a number like 1.23456789 (10 digits), the number will be rounded off to approximately 7
+
+digits (i.e. 1.234568).
+
+double
+
+The double data type uses 8 bytes of storage and has a range of approximately negative 1.79769313486231570 x 10308 to positive 1.79769313486231570 x 10308, with a precision of approximately 15 digits.
+
+By default, whenever you specify a floating point number in Java, it is automatically considered to be a double, not a float. If you want Java to treat the floating point number as a float, you have to add a suffix “F” to the end of the number.
+
+Unless memory space is a concern, you should always use a double instead of a float as it is more precise.
+
+Besides the six data types mentioned above, Java has two more primitive data types. They are:
+
+char
+
+char stands for character and is used to store single Unicode characters such as ‘A’, ‘%’, ‘@’ and ‘p’ etc. It uses 2 bytes of memory.
+
+boolean
+
+boolean is a special data type that can only hold two values: true and false.
+
+It is commonly used in control flow statements. We’ll cover control flow statements in Chapter 6.
+
+3.3 Naming a Variable
+
+
+
+
+
+A variable name in Java can only contain letters, numbers, underscores (_) or the dollar sign ($). However, the first character cannot be a number. Hence, you can name your variables _userName, $username, username or userName2
+
+but not 2userName.
+
+The convention, however, is to always begin your variable names with a letter, not "$" or "_". Additionally, the dollar sign character is almost never used when naming a variable (although it is not technically wrong to use it).
+
+
+
+Variable names should be short but meaningful, designed to indicate to the casual reader the intent of its use. It makes more sense to name your variables userName, userAge and userNumber, instead of n, a and un.
+
+In addition, there are some reserved words that you cannot use as a variable name because they already have pre-assigned meanings in Java. These reserved words include words like System, if, while etc. We’ll learn about each of them in subsequent chapters.
+
+It is common practice to use camel casing when naming variables in Java.
+
+Camel casing is the practice of writing compound words with mixed casing, capitalising the first letter of each word except the first word (e.g.
+
+thisIsAVariableName). This is the convention that we’ll be using in the rest of the book.
+
+Finally, variable names are case sensitive. thisIsAVariableName is not the same as thisisavariablename.
+
+3.4 Initializing a Variable
+
+Every time you declare a new variable, you need to give it an initial value.
+
+This is known as initializing the variable. You can change the value of the variable in your program later.
+
+There are two ways to initialize a variable. You can initialize it at the point of declaration or initialize it in a separate statement.
+
+The code below shows how you can initialize variables at the point of declaration (line numbers on the left are added for reference and are not part of the code).
+
+1 byte userAge = 20;
+
+2 short numberOfStudents = 45;
+
+3 int numberOfEmployees = 500;
+
+4 long numberOfInhabitants = 21021313012678L;
+
+5
+
+6 float hourlyRate = 60.5F;
+
+7 double numberOfHours = 5120.5;
+
+8
+
+9 char grade = 'A';
+
+10 boolean promote = true;
+
+11
+
+12 byte level = 2, userExperience = 5;
+
+As mentioned above, in order to specify a long value, you have to add the suffix “L” to the end of the number. Hence, on line 4 when we initialized numberOfInhabitants, we added “L” to the end of the number. If we do not do that, the compiler will complain that the number is too large and give us an error.
+
+In addition, when we initialized the variable hourlyRate on line 6, we added the suffix “F”. This is because by default, any floating point number is treated as a double by Java. We need to add the suffix “F” to indicate to the compiler that hourlyRate is of float data type.
+
+Finally, when initializing a char data type, we need to enclose the character in single quotes as shown on line 9.
+
+On line 12, we see an example of how you can declare and initialize two variables of the same data type in one statement. The two variables are separated by a comma, and there is no need to state the data type of the second variable.
+
+The examples above show how you can initialize a variable at the point of
+
+
+
+
+
+declaration. Alternatively, you can choose to declare and initialize a variable in two separate statements as shown below:
+
+byte year; //declare the variable first
+
+year = 20; //initialize it later
+
+3.5 The Assignment Operator
+
+The = sign in programming has a different meaning from the = sign we learned in Math. In programming, the = sign is known as an assignment operator. It means we are assigning the value on the right side of the = sign to the variable on the left.
+
+In programming, the statements x = y and y = x have very different meanings.
+
+Confused? An example will likely clear this up.
+
+Suppose we declare two variables x and y as follows: int x = 5;
+
+int y = 10;
+
+If you write
+
+x = y;
+
+your Math teacher is probably going to be upset at you since x is not equal to y. However, in programming, this is fine.
+
+This statement means we are assigning the value of y to x. It is alright to assign the value of a variable to another variable. In our example, the value of x is now changed to 10 while the value of y remains unchanged. In other words, x = 10 and y = 10 now.
+
+If we now change the values of x and y to 3 and 20 respectively by writing
+
+
+
+
+
+x = 3;
+
+y = 20;
+
+and write
+
+y = x;
+
+we are assigning the value of x to the variable y. Hence, y becomes 3 while the value of x remains unchanged (i.e. y = 3, x = 3 now).
+
+3.6 Basic Operators
+
+Besides assigning an initial value to a variable or assigning another variable to it, we can also perform the usual mathematical operations on variables.
+
+Basic operators in Java include +, -, *, / and % which represent addition, subtraction, multiplication, division and modulus respectively.
+
+Example
+
+Suppose x = 7, y = 2
+
+Addition: x + y = 9
+
+Subtraction: x - y = 5
+
+Multiplication: x*y = 14
+
+Division: x/y = 3 (rounds down the answer to the nearest integer) Modulus: x%y = 1 (gives the remainder when 7 is divided by 2) In Java, division gives an integer answer if both x and y are integers.
+
+However, if either x or y is a non integer, we will get a non integer answer.
+
+For instance,
+
+7 / 2 = 3
+
+7.0 / 2 = 3.5
+
+7 / 2.0 = 3.5
+
+7.0 / 2.0 = 3.5
+
+
+
+
+
+In the first case, when an integer is divided by another integer, you get an integer as the answer. The decimal portion of the answer, if any, is truncated.
+
+Hence, we get 3 instead of 3.5.
+
+In all other cases, the result is a non integer as at least one of the operands is a non integer.
+
+Note that 7.0 is not the same as 7 in Java. The former is a floating point number while the latter is an integer.
+
+3.7 More Assignment Operators
+
+Besides the = operator, there are a few more assignment operators in Java (and most programming languages). These include operators like +=, -= and
+
+*=.
+
+Suppose we have the variable x, with an initial value of 10. If we want to increment x by 2, we can write
+
+
+
+x = x + 2;
+
+The program will first evaluate the expression on the right (x + 2) and assign the answer to the left. So eventually x becomes 12.
+
+Instead of writing x = x + 2, we can also write x += 2 to express the same meaning. The += operator is a shorthand that combines the assignment operator with the addition operator. Hence, x += 2 simply means x = x + 2.
+
+Similarly, if we want to do a subtraction, we can write x = x - 2 or x -= 2.
+
+The same works for all the 5 operators mentioned in the section above.
+
+Most programming languages also have the ++ and –– operators. The ++
+
+operator is used when you want to increase the value of a variable by 1. For instance, suppose
+
+int x = 2;
+
+If you write
+
+x++;
+
+the value of x becomes 3.
+
+There is no need to use the = operator when you use the ++ operator. The statement x++; is equivalent to
+
+x = x + 1;
+
+The ++ operator can be placed in front of or behind the variable name. This affects the order in which tasks are performed.
+
+Suppose we have an integer named counter. If we write System.out.println(counter++);
+
+the program first prints the original value of counter before incrementing counter by 1. In other words, it executes the tasks in this order System.out.println(counter);
+
+counter = counter + 1;
+
+On the other hand, if we write
+
+System.out.println(++counter);
+
+the program first increments counter by 1 before printing the new value of counter. In other words, it executes the tasks in this order counter = counter + 1;
+
+System.out.println(counter);
+
+In addition to the ++ operator, we also have the –– operator (two minus
+
+
+
+
+
+signs). This operator decreases the value of the variable by 1.
+
+3.8 Type Casting In Java
+
+Sometimes in our program, it is necessary to convert from one data type to another, such as from a double to an int. This is known as type casting.
+
+If we want to convert a smaller data type into a larger data type, we do not need to do anything explicitly. For instance, the code below assigns a short (2 bytes) to a double (8 bytes). This is known as a widening primitive conversion and does not require any special code on our part.
+
+short age = 10;
+
+double myDouble = age;
+
+However, if we want to assign a larger data type to a smaller data type, we need to indicate it explicitly using a pair of parenthesis. This is known as a narrowing primitive conversion. The example below shows how it can be done.
+
+int x = (int) 20.9;
+
+Here, we can casting a double (8 bytes) into an int (4 bytes).
+
+Narrowing conversion is not safe and should be avoided unless absolutely necessary. This is because narrowing conversion can result in a loss of data.
+
+When we cast 20.9 into an int, the resulting value is 20, not 21. The decimal portion is truncated after the conversion.
+
+We can also cast a double into a float. Recall that we mentioned earlier that all non integers are treated as double by default in Java? If we want to assign a number like 20.9 to a float, we need to add a suffix ‘F’ to the number.
+
+Another way to do it is to use a cast, like this: float num1 = (float) 20.9;
+
+The value of num1 will be 20.9.
+
+In addition to casting between numeric types, we can also do other types of casting. We’ll explore some of these conversions in subsequent chapters.
+
+
+
+
+
+Chapter 4: Arrays and Strings In the previous chapter, we covered the eight primitive data types in Java.
+
+Besides these primitive types, Java also comes with a few advanced data types. In this chapter, we are going to cover two of them: strings and arrays.
+
+In addition, we are going to discuss the difference between a primitive data type and a reference data type.
+
+4.1 String
+
+First, let us look at strings. A string is essentially a piece of text such as
+
+“Hello World” or “Good morning”.
+
+To declare and initialize a String variable, you write String message = "Hello World";
+
+where message is the name of the String variable and “Hello World” is the string assigned to it. Note that you need to enclose the string in double quotes (").
+
+You can also assign an empty string to a String variable like this: String anotherMessage = "";
+
+If you want to join two or more strings together, you can use the concatenate sign (+). For instance, you can write
+
+String myName = "Hello World, " + "my name is Jamie"; This is the same as
+
+String myName = "Hello World, my name is Jamie"; 4.1.1 String Methods
+
+Unlike the 8 primitive types we looked at in the previous chapter, a String is actually an object. Specifically, it is an object of the String class.
+
+Do not worry if you don’t understand what this means; we’ll discuss classes and objects in Chapter 7. For now, all that you have to know is that the String class provides us with a number of pre-written methods that we can use when working with strings. A method is a block of reusable code that performs a certain task. We’ll look at some examples later.
+
+In Java, a method may have different variations. Most of the examples below discuss only one of the variations for each method. However, if you learn how to use one variation, you can figure out how to use the other variations with relative ease. Let’s look at some of the commonly used String methods now.
+
+length()
+
+The length() method tells us the total number of characters the string has.
+
+To find the length of the string “Hello World”, we write
+
+"Hello World".length();
+
+Whenever we use a method, we need to use the dot operator. We type the name of the method (length in this case) after the dot operator, followed by a pair of parenthesis (). Most methods return an answer after they complete their tasks. The length() method returns the length of the string. You can assign this result to a variable as shown below.
+
+int myLength = "Hello World".length(); In the example above, myLength will be equal to 11 as “Hello” and “World”
+
+both have 5 characters each. When you add the space between the two words, you get a total length of 11.
+
+You can display the result of the length() method using the statements below.
+
+int myLength = "Hello World".length(); System.out.println(myLength);
+
+Try adding the two statements above to the HelloWorld.java file you wrote earlier in Chapter 2. You’ll have to add them inside the opening and closing braces of the main() method. Run the program. You’ll see the value 11
+
+displayed as the output. We’ll talk more about displaying outputs in the next chapter.
+
+toUpperCase()/toLowerCase()
+
+The toUpperCase() method is used to convert a string to uppercase characters. The toLowerCase() method is used to convert a string to lowercase characters.
+
+For instance, to change the string “Hello World” to upper case, we can write String uCase = "Hello World".toUpperCase(); On the right side of the statement, we use the string “Hello World” to call the toUpperCase() method. We then assign the result to the variable uCase.
+
+uCase will thus be equal to “HELLO WORLD”.
+
+substring()
+
+The substring() method is used to extract a substring from a longer string.
+
+Some methods in Java require certain data for them to work. These data are known as arguments. We include these arguments in the pair of parenthesis that follows the method name. The substring() method is an example of a method that requires one argument to work.
+
+For instance, to extract a substring from “Hello World”, we can use the
+
+statement below:
+
+String firstSubstring = "Hello World".substring(6); On the right side of the statement, we use the “Hello World” string to call the substring() method. The number 6 in the parenthesis is known as the argument. This argument tells the compiler where to start extracting the substring. Essentially, it is asking the compiler to extract the substring starting from index 6 (i.e. position 6) to the end of the string.
+
+Note that in programming, index starts with a value of ZERO not 1. This is a common practice in almost all programming languages such as Python and Java. Hence, in our example, ‘H’ is at index 0 while ‘W’ is at index 6.
+
+The statement above will extract the substring “World”. This result is then assigned to firstSubstring.
+
+firstSubstring is thus equal to “World”.
+
+The substring() method also comes with another variation that allows us to extract a substring from one index to another. Suppose you want to extract a substring from position 1 to 7, you can do it as follows: String message = "Hello World";
+
+String secondSubstring = message.substring(1, 8); In the example above, we first assigned “Hello World” to the variable message. We then use message to call the substring() method.
+
+The two arguments are 1 and 8.
+
+As before, the first argument tells the compiler the index of the starting position to extract. The second argument tells the compiler the index of the first position to stop extracting. In other words, in our example, the compiler stops extracting at position 8 (not after position 8). That means the letter at position 8 is not included in the substring. Hence, the substring extracted is
+
+“ello Wo”.
+
+secondSubstring is thus equal to “ello Wo”.
+
+message remains as “Hello World”.
+
+charAt()
+
+The charAt() method returns a single character at a specified location. This character can then be assigned to a char variable.
+
+For instance, the statement
+
+char myChar = "Hello World".charAt(1); extracts the character at index 1 and assigns it to myChar. Hence, myChar is equal to ‘e’.
+
+equals()
+
+The equals() method is used to compare if two strings are identical. It returns true if the strings are equal and false if they are not.
+
+If we have the statements:
+
+boolean equalsOrNot = "This is Jamie".equals("This is Jamie"); boolean equalsOrNot2 = "This is Jamie".equals("Hello World"); equalsOrNot will be true while equalsOrNot2 will be false.
+
+split()
+
+The split() method splits a string into substrings based on a user-defined separator (also known as a delimiter). After splitting the string, the split() method returns an array that contains the resulting substrings. An array is a collection of related data. We’ll discuss arrays in the next section.
+
+
+
+
+
+Suppose you want to split the string “Peter, John, Andy, David” into substrings, you can do it as follows:
+
+String names = "Peter, John, Andy, David"; String[] splitNames = names.split(", "); Here, we first assign the string that we want to split to the variable names.
+
+We then use names to call the split() method. The split() method takes in one argument – the delimiter used to separate the substring. In our example, the delimiter is a comma followed by a space.
+
+The result of the code above is the following array
+
+{"Peter", "John", "Andy", "David"}
+
+This array is assigned to the variable splitNames.
+
+We’ve covered a number of the commonly used String methods in Java. For a complete list of all the String methods available, check out this page
+
+https://docs.oracle.com/javase/8/docs/api/java/lang/String.html#method.summary 4.2 Array
+
+Next, let us look at arrays.
+
+An array is a collection of data that are normally related to each other.
+
+Suppose we want to store the ages of 5 users. Instead of storing them as user1Age, user2Age, user3Age, user4Age and user5Age, we can store them as an array.
+
+There are two ways to declare an array variable. The first way is to declare it as follows:
+
+int[] userAge;
+
+int indicates that this variable stores int values.
+
+[] indicates that the variable is an array instead of a normal variable.
+
+userAge is the name of the array.
+
+The second way to declare it is as follows:
+
+int userAge[];
+
+This style comes from the C/C++ language and was adopted in Java to accommodate C/C++ programmers. However, this is not the preferred syntax in Java. We’ll stick to the first style in this book.
+
+After you declare an array variable, you need to create an array and assign it to the variable. To do that, we use the new keyword as shown below: int[] userAge;
+
+userAge = new int[] {21, 22, 23, 24, 25};
+
+The first statement declares the array variable userAge. The second statement creates the array {21, 22, 23, 24 and 25} and assigns it to userAge. Since userAge has not been assigned any array previously, this statement initializes userAge with the created array. Once you initialize an array, the size of the array cannot be changed anymore. In this case, the array userAge can only hold 5 values from now onwards as we initialized it with 5 integers. {21, 22, 23, 24, 25} are the five integers that the array stores currently.
+
+In addition to declaring and initializing an array in two statements, we can combine the two statements into a single statement using the shortcut syntax below:
+
+int[] userAge2 = new int[] {21, 22, 23, 24, 25}; We can further simply this statement to
+
+int[] userAge2 = {21, 22, 23, 24, 25};
+
+That is, you can omit the words new int[] if you declare and initialize an array in the same statement.
+
+
+
+
+
+A third way to declare and initialize an array is as follows: int[] userAge3 = new int[5];
+
+This statement declares an array userAge3 and initializes it with an array of 5
+
+integers (as indicated by the number 5 inside the square brackets [ ]). As we did not specify the values of these 5 integers, Java automatically creates an array using the default value and assigns it to userAge3. The default value for integers is 0. Hence, userAge3 becomes {0, 0, 0, 0, 0}.
+
+You can update the individual elements in the array by accessing them using their indexes. Recall that indexes always start with a value of zero. The first element of the array has an index of 0, the next has an index of 1 and so forth.
+
+Suppose the array userAge is currently {21, 22, 23, 24, 25}. To update the first element of the array, we write
+
+userAge[0] = 31;
+
+the array becomes {31, 22, 23, 24, 25}.
+
+If we type
+
+userAge[2] = userAge[2] + 20;
+
+the array becomes {31, 22, 43, 24, 25}. That is, 20 is added to the third element.
+
+
+
+4.2.1 Array Methods
+
+Like strings, arrays also come with a number of pre-written methods.
+
+The methods that we discuss below are found in the java.util.Arrays class.
+
+To use them, you have to add the statement
+
+import java.util.Arrays;
+
+to your program. This is to tell the compiler where to find the code for these methods.
+
+The import statement must appear after the package statement and before the class declaration. An example is shown below:
+
+package helloworld;
+
+import java.util.Arrays;
+
+public class HelloWorld {
+
+//Code for HelloWorld class
+
+}
+
+You may recall that previously when we used the String class, we did not have to write any import statement. This is because the String class is present in the java.lang package which is imported by default in all Java programs.
+
+Now, let us look at some of the commonly used methods for arrays.
+
+equals()
+
+The equals() method is used to determine if two arrays are equal to each other. It returns true if the arrays are equal and false if they are not. Two arrays are considered equal if they have the same number of elements and the elements are arranged in the same order.
+
+Suppose you have the following code segment:
+
+int[] arr1 = {0,2,4,6,8,10};
+
+int[] arr2 = {0,2,4,6,8,10};
+
+int[] arr3 = {10,8,6,4,2,0};
+
+boolean result1 = Arrays.equals(arr1, arr2);
+
+boolean result2 = Arrays.equals(arr1, arr3); result1 will be true while result2 will be false. This is because for result2, even though arr1 and arr3 have the same elements, the elements are not arranged in the same order. Hence, the two arrays are not considered equal.
+
+Note that in the example above, we added the word Arrays in front of the method name. This is because all methods in the Arrays class are static. To call a static method, you have to add the name of the class in front. We’ll talk more about static methods in Chapter 7.
+
+copyOfRange()
+
+The copyOfRange() method allows you to copy the contents of one array into another. It requires three arguments.
+
+Suppose you have
+
+int [] source = {12, 1, 5, -2, 16, 14, 18, 20, 25}; You can copy the contents of source into a new array dest using the statement below:
+
+int[] dest = Arrays.copyOfRange(source, 3, 7);
+
+The first argument (source) is the array that provides the values to be copied.
+
+The second and third arguments tell the compiler at which index to start and stop copying respectively. In other words, in our example, we are copying elements from index 3 to index 6 (i.e. the element at index 7 is not copied).
+
+After copying the elements, the copyOfRange() method returns an array with the numbers copied. This array is then assigned to dest.
+
+Hence, dest becomes {-2, 16, 14, 18} while source remains unchanged.
+
+toString()
+
+The toString() method returns a String that represents the contents of an array. This makes it easy for us to display the contents of the array. For instance, suppose you have
+
+int[] numbers = {1, 2, 3, 4, 5};
+
+You can use the statement below to display the contents of numbers.
+
+System.out.println(Arrays.toString(numbers));
+
+You will get
+
+[1, 2, 3, 4, 5]
+
+as the output.
+
+sort()
+
+The sort() method allows us to sort our arrays. It takes in an array as the argument.
+
+Suppose you have
+
+int [] numbers2 = {12, 1, 5, -2, 16, 14};
+
+You can sort this array by writing
+
+Arrays.sort(numbers2);
+
+The array will be sorted in ascending order.
+
+The sort() method does not return a new array. It simply modifies the array that is passed in. In other words, it modifies the numbers2 array in our example. You can then use the statement
+
+System.out.println(Arrays.toString(numbers2));
+
+to print out the sorted array. You will get
+
+[-2, 1, 5, 12, 14, 16]
+
+as the output.
+
+binarySearch()
+
+The binarySearch() method allows you to search for a specific value in a sorted array. To use this method, make sure your array is sorted first. You can use the sort() method mentioned above to do so.
+
+Suppose we have the following array:
+
+int[] myInt = {21, 23, 34, 45, 56, 78, 99};
+
+To determine if 78 is inside the array, we write int foundIndex = Arrays.binarySearch(myInt, 78); foundIndex will be equal to 5. This indicates that the number 78 is found at index 5.
+
+On the other hand, if you write
+
+int foundIndex2 = Arrays.binarySearch(myInt, 39); foundIndex2 will be equal to -4.
+
+There are two parts to this result – the negative sign and the number 4.
+
+The negative sign simply indicates that 39 is not found.
+
+The number 4, on the other hand, is kind of weird. It tells you where the number should be if it exists in the array. However, it adds ONE to that
+
+
+
+
+
+index. In other words, if the number 39 exists in the array, it should be at index 4-1 = 3.
+
+We’ve covered some of the more commonly used array methods in this section. For a complete list of all the array methods available in Java, check out this page https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html
+
+4.2.2 Finding Array Length
+
+Finally, let’s look at how we can find the length of an array. The length of an array tells us the number of items the array has. Previously when we discussed strings, we mentioned we can use the length() method to find the length of a string.
+
+Contrary to what most would believe, there is no length() method when working with arrays. Instead, to find the length of an array, we use the length field. We’ll talk about fields vs methods in Chapter 7. For now, all you have to know is that to find the length of an array, you do not need to add parenthesis after the word length.
+
+For instance, if we have
+
+int [] userAge = {21, 22, 26, 32, 40};
+
+userAge.length is equal to 5 as there are 5 numbers in the array.
+
+4.3 Primitive Type vs. Reference Type
+
+Now that we are familiar with strings and arrays, let us discuss an important concept regarding data types in Java.
+
+All data types in Java can be classified as either a primitive type or a reference type. There are only 8 primitive types in Java (byte, short, int, long, float, double, char and boolean), the rest are reference types.
+
+Examples of reference types include strings and arrays discussed in this
+
+
+
+
+
+chapter, and classes and interfaces that will be discussed in Chapter 7 and 8.
+
+One of the main differences between a primitive type and a reference type is the data that is stored.
+
+A primitive type stores its own data.
+
+When we write
+
+int myNumber = 5;
+
+the variable myNumber stores the actual value 5.
+
+A reference type, on the other hand, does not store the actual data. Instead, it stores a reference to the data. It does not tell the compiler what the value of the data is; it tells the compiler where to find the actual data.
+
+An example of a reference type is a String. When you write a statement like String message = "Hello";
+
+the variable message actually does not store the string “Hello”.
+
+Instead, the string “Hello” is created and stored elsewhere in the computer’s memory. The variable message stores the address of that memory location.
+
+That’s all that we need to know about reference types at the moment. As this is a book for beginners, we will not go into details about why reference types are necessary. Just be aware that there is a difference between primitive types and reference types; the former stores a value while the latter stores an address.
+
+4.4 Strings are Immutable
+
+Before I end this chapter, I would like to cover one more concept about strings. Specifically, I would like to point out that strings are immutable in
+
+Java (and most other languages).
+
+Immutable means the value of a string cannot be changed. Whenever we update a String variable, we are actually creating a new string and assigning the memory address to the String variable. Let’s consider an example.
+
+Suppose we have
+
+String message = "Hello";
+
+We learned earlier that the compiler will create the string “Hello” and store it somewhere in the computer’s memory. The variable message stores the address of that location. Now, if we update the value of message to “World”
+
+as shown below
+
+message = "World";
+
+the compiler actually does not go to the location where “Hello” is stored to change its value to “World”. Instead, it creates a new string “World” and stores it somewhere else in the computer’s memory. This new address is then assigned to message. In other words, there are two strings now: “Hello” and
+
+“World”. message stores the address of “World”. If “Hello” is no longer needed in the program, it is eventually destroyed so as to free up that memory location. This process is known as garbage collection and is handled automatically by Java.
+
+
+
+
+
+Chapter 5: Making our Program Interactive Now that we have covered the basics of variables and data types, let us write a program that accepts input from users, stores the data in a variable and displays messages to our users. After all, what good is a computer program if it cannot interact with its users?
+
+5.1 Displaying Output
+
+We’ve already seen some examples of displaying outputs to users in Chapter 2 and 4.
+
+Simply stated, to display outputs to our users, we can use the print() or println() method provided by Java. In order to use these methods, we have to add System.out in front of the method names. This is because the two methods belong to the PrintStream class and we have to use System.out to access them. Do not worry if this sounds very confusing at the moment.
+
+We’ll learn more about classes and methods in Chapter 7.
+
+The difference between the println() and print() methods is that println() moves the cursor down to the next line after displaying the message while print() does not.
+
+For instance, if we write
+
+System.out.println("Hello ");
+
+System.out.println ("How are you?");
+
+we’ll get
+
+Hello
+
+How are you?
+
+If we write
+
+System.out.print("Hello "); System.out.print("How are you?");
+
+we’ll get
+
+Hello How are you?
+
+Other than that, the two methods are the same.
+
+Let us look at a few examples of how we can use println() to display messages to our users. The print() method works exactly the same way.
+
+Displaying a simple text message
+
+To display a simple message, we write
+
+System.out.println("Hi, my name is Jamie."); Output:
+
+Hi, my name is Jamie.
+
+Displaying the value of a variable
+
+To display the value of a variable, we pass in the variable name as an argument. For instance, suppose we have
+
+int number = 30;
+
+we can display the value of number by writing
+
+System.out.println(number);
+
+Output:
+
+30
+
+Note that we do not enclose the variable name (number) in double quotes. If
+
+we write
+
+System.out.println("number");
+
+we’ll get
+
+number
+
+as the output instead.
+
+Displaying results without assigning them to variables We can also use the println() method to display the result of a mathematical expression or a method directly.
+
+For instance, if we write
+
+System.out.println(30+5);
+
+we’ll get
+
+35
+
+as the output. To display the result of a method, we can write System.out.println("Oracle".substring(1, 4)); Here, we are displaying the result of the substring() method. We’ll get rac
+
+as the output.
+
+Using the concatenation sign
+
+Next, let us look at a few examples of how we can display more complex strings by combining two or more shorter strings. To do that, we use the concatenation (+) sign.
+
+
+
+For instance, if we write
+
+System.out.println("Hello, " + "how are you?" + " I love Java."); we’ll get
+
+Hello, how are you? I love Java.
+
+To concatenate strings with variables, we can write int results = 79;
+
+System.out.println("You scored " + results + " marks for your test.");
+
+Here, we are concatenating the strings “You scored ” and “ marks for your test.” with the variable results. We’ll get
+
+You scored 79 marks for your test.
+
+Finally, we can concatenate strings with mathematical expressions as shown below.
+
+System.out.println("The sum of 50 and 2 is " + (50 + 2) + "."); We’ll get
+
+The sum of 50 and 2 is 52.
+
+Note that in the example above, we added parenthesis to the mathematical expression 50+2. This is to force the compiler to evaluate the expression first before concatenating the result with the other two substrings. You are strongly advised to do so whenever you concatenate strings with mathematical expressions. Failure to do so can result in errors.
+
+
+
+
+
+5.2 Escape Sequences
+
+Next, let’s look at escape sequences. Sometimes in our programs, we may need to print some special “unprintable” characters such as a tab or a newline.
+
+In this case, you need to use the \ (backslash) character to escape characters that otherwise have a different meaning.
+
+For instance to print a tab, we type the backslash character before the letter t, like this: \t.
+
+Without the \ character, the letter “t” will be printed. With it, a tab is printed.
+
+\t is known as an escape sequence. If you type
+
+System.out.println("Hello\tWorld");
+
+you’ll get
+
+Hello World
+
+Other commonly used escape sequences include:
+
+To prints a newline (\n)
+
+Example
+
+System.out.println("Hello\nWorld");
+
+Output
+
+Hello
+
+World
+
+To print the backslash character itself (\\)
+
+Example
+
+System.out.println("\\");
+
+
+
+
+
+Output
+
+\
+
+To print double quotes (\") so that the double quote does not end the string
+
+Example
+
+System.out.println("I am 5'9\" tall"); Output
+
+I am 5'9" tall
+
+5.3 Formatting Outputs
+
+In the previous examples, we looked at how we can display outputs to users using the println() and print() methods. However, sometimes we want to have greater control over the format of the output. For instance, if we write System.out.println("The answer for 5.45 divided by 3 is " +
+
+(5.45/3));
+
+we’ll get
+
+The answer for 5.45 divided by 3 is 1.8166666666666667
+
+In most cases, we do not want to display so many decimal places to our users.
+
+In that case, we can use the printf() method instead to display the output to our users. The printf() method is slightly more complex than the println() method, but it offers more control over how our output is displayed. To format the output above, we can write
+
+System.out.printf("The answer for %.3f divided by %d is %.2f.", 5.45, 3, 5.45/3);
+
+This will give the output as
+
+The answer for 5.450 divided by 3 is 1.82.
+
+
+
+
+
+The printf() method requires one or more arguments. In the example above, we passed in four arguments to the method.
+
+The first argument "The answer for %.3f divided by %d is %.2f." is the string to be formatted.
+
+You may notice a few weird symbols in the string: %.3f, %d and %.2f. These are known as format specifiers. They serve as placeholders and are replaced by the arguments that follow. The first format specifier (%.3f) is replaced by the first argument that follows (5.45), the second (%d) by the second argument (3) and so on.
+
+Format specifiers always begin with a percent sign (%) and end with a converter (such as f or d). They specify how the arguments that replace them should be formatted. In between the percent sign (%) and the converter, you can add additional information known as flags.
+
+In our example, the first format specifier is %.3f.
+
+f is the converter. It tells the compiler that it should be replaced by a floating point number (i.e. numbers with decimal places such as float or double). If we try to replace it with a non floating point number, we’ll get an error.
+
+.3 is the flag. It indicates that we want to display the number with 3 decimal places. Hence, the number 5.45 is displayed as 5.450 in the output.
+
+Other than the %.3f specifier, there are a lot of other specifiers that we can use in Java. The next two sections discuss some of the other commonly used converters and flags in our specifiers.
+
+
+
+5.3.1 Converters
+
+The integer converter: d
+
+This converter is for formatting integers such as byte, short, int and long.
+
+
+
+
+
+Example
+
+System.out.printf("%d", 12);
+
+Output
+
+12
+
+Note:
+
+System.out.printf("%d", 12.9); will give us an error as 12.9 is not an integer.
+
+Similarly, System.out.printf("%f", 12); will give us an error as 12 is not a floating point number.
+
+The newline converter: n
+
+This converter moves the cursor to the next line Example
+
+System.out.printf("%d%n%d", 12, 3);
+
+Output
+
+12
+
+3
+
+
+
+5.3.2 Flags
+
+The width flag
+
+This flag is used to specify total width.
+
+Example 1
+
+System.out.printf("%8d", 12);
+
+Output
+
+12
+
+
+
+
+
+In the output above, there are 6 spaces in front of the number 12, giving us a total width of 8.
+
+Example 2
+
+System.out.printf("%8.2f", 12.4);
+
+Output
+
+12.40
+
+In the output above, there are 3 spaces in front of the number, giving us a total width of 8 including the decimal point.
+
+The thousands separator flag (,)
+
+This flag is used to display numbers with a thousands separator Example 1
+
+System.out.printf("%,d", 12345);
+
+Output
+
+12,345
+
+Example 2
+
+System.out.printf("%,.2f", 12345.56789); Output
+
+12,345.57
+
+5.4 Accepting User Input
+
+Now that we know how to display outputs to users, let’s look at how we can accept input from them. Accepting input is actually pretty straightforward.
+
+There are a few ways to do it, but the easiest and most common way is to use a Scanner object.
+
+To accept user input, we need to first import the Scanner class using the statement below:
+
+import java.util.Scanner;
+
+Next, we need to create a Scanner object and pass System.in as an argument.
+
+System.in tells the compiler that you want to get input from the standard input device, which is usually a keyboard. If you are new to programming, you may not understand what an object is. Don’t worry about this; you’ll learn about classes and objects in Chapter 7. For now, just know that you need to write the statement below to accept inputs from users.
+
+Scanner reader = new Scanner(System.in);
+
+The Scanner class contains a few methods that we can use to read input from the user. The commonly used methods are nextInt(), nextDouble() and nextLine() for reading int, double and String data types respectively.
+
+To understand how these methods work, let’s create a new project in NetBeans and name it InputDemo. Refer to Chapter 2.2 if you have forgotten how to create a new project in NetBeans. Replace the code with the code below (line numbers are added for reference):
+
+1 package inputdemo;
+
+2 import java.util.Scanner;
+
+3
+
+4 public class InputDemo {
+
+5 public static void main(String[] args) {
+
+6 Scanner input = new Scanner(System.in); 7
+
+8 System.out.print("Enter an integer: "); 9 int myInt = input.nextInt();
+
+10 System.out.printf("You entered %d.%n%n", myInt); 11
+
+12 System.out.print("Enter a double: "); 13 double myDouble = input.nextDouble();
+
+14 System.out.printf("You entered %.2f.%n%n", myDouble); 15
+
+16 System.out.print("Enter a string: ");
+
+17 input.nextLine();
+
+18 String myString = input.nextLine();
+
+19 System.out.printf("You entered \"%s\".%n%n", myString); 20
+
+21 }
+
+22}
+
+On line 2, we import the java.util.Scanner class.
+
+Next, we create a Scanner object on line 6 and name it input.
+
+On line 8, we prompt the user to enter an integer. We then use the nextInt() method to read the integer. Finally on line 10, we display the user’s input using the printf() method.
+
+From line 12 to 14, we do something similar, except that we prompt the user to enter a double and use the nextDouble() method to read the input.
+
+From line 16 to 19, we prompt the user to enter a string and use the nextLine() method to read the string.
+
+However, you may notice something different here. On line 17, we have an additional statement:
+
+input.nextLine();
+
+In other words, we called the nextLine() method twice (on lines 17 and 18).
+
+This is necessary because of how the nextDouble() method on line 13
+
+works. The nextDouble() method only reads in a double. However, whenever the user inputs a number, the user will press the Enter key. This Enter key is essentially the newline character ("\n") and is ignored by the nextDouble() method as it is not a double. We say that the nextDouble() method does not consume the newline character. We need the nextLine() method on line 17 to consume this newline character.
+
+If you delete Line 17 and try to run the program again, you’ll see that you won’t have a chance to key in any string. This is because the nextLine()
+
+method on line 18 consumes the previous newline character. As there is no other nextLine() statement after this, the program will not wait for another input from the user.
+
+Whenever you use the nextLine() method after the nextDouble() method, you should always have an additional nextLine() method to consume the previous newline character. The same applies to the nextInt() method. Try running this program and enter an integer, double and string when prompted.
+
+The program should run as expected.
+
+Besides the three methods mentioned above, Java also has the nextByte(), nextShort(), nextLong(), nextFloat() and nextBoolean() methods for reading a byte, short, long, float and boolean value respectively.
+
+Each of these methods expects to read in values of the correct data type. For instance, the nextDouble() method expects to read in a double. If the user does not enter values of the correct data type, the methods will try to convert the input to the correct type. If this fails, the methods result in an error.
+
+For instance, if the nextDouble() method reads in the value 20, it’ll convert it to a double. However, if it reads in the string “hello”, it’ll generate an error.
+
+We’ll learn how to deal with these errors in the next chapter.
+
+
+
+
+
+Chapter 6: Control Flow Statements We’ve covered quite a bit in the previous chapters. By now, you should know the basic structure of a Java program and be able to write a simple Java program that uses variables. In addition, you also learned how you can use the various built-in Java methods to interact with your users.
+
+In this chapter, we are going to take things a step further – we are going to learn how to control the flow of your program. By default, the statements inside your program are executed from top to bottom, in the order that they appear. However, we can alter this flow using control flow statements.
+
+These statements include decision-making statements (if, switch), looping statements (for, while, do-while), and branching statements (break, continue). We’ll look at each of them in subsequent sections.
+
+For now, let us first look at comparison operators.
+
+6.1 Comparison Operators
+
+Most control flow statements involve doing some form of comparison. The program proceeds differently depending on the result of the comparison.
+
+The most commonly used comparison operator is the equality operator. If we want to compare whether two variables are equal, we use the == (double =) operator. For instance, if you write x == y, you are asking the program to check if the value of x is equal to the value of y. If they are equal, the condition is met and the statement evaluates to true. Else, the statement evaluates to false.
+
+In addition to evaluating whether two values are equal, there are other comparison operators that we can use in our control flow statements.
+
+Not equal (!=)
+
+Returns true if the left is not equal to the right 5 != 2 is true
+
+6 != 6 is false
+
+Greater than (>)
+
+Returns true if the left is greater than the right 5 > 2 is true
+
+3 > 6 is false
+
+Smaller than (<)
+
+Returns true if the left is smaller than the right 1 < 7 is true
+
+9 < 6 is false
+
+Greater than or equal to (>=)
+
+Returns true if the left is greater than or equal to the right 5 >= 2 is true
+
+5 >= 5 is true
+
+3 >= 6 is false
+
+Smaller than or equal to (<=)
+
+Returns true if the left is smaller than or equal to the right 5 <= 7 is true
+
+7 <= 7 is true
+
+
+
+
+
+9 <= 6 is false
+
+We also have two logical operators (&&, ||) that are useful if we want to combine multiple conditions.
+
+The AND operator (&&)
+
+Returns true if all conditions are met
+
+5==5 && 2>1 && 3!=7 is true
+
+5==5 && 2<1 && 3!=7 is false as the second condition (2<1) is false The OR operator (||)
+
+Returns true if at least one condition is met.
+
+5==5 || 2<1 || 3==7 is true as the first condition (5==5) is true 5==6 || 2<1 || 3==7 is false as all conditions are false 6.2 Decision Making Statements
+
+Now that we are familiar with comparison operators, let us proceed to learn how we can use these operators to control the flow of a program. We’ll look at the if statement first.
+
+
+
+6.2.1 If Statement
+
+The if statement is one of the most commonly used control flow statements.
+
+It allows the program to evaluate if a certain condition is met and perform the appropriate action based on the result of the evaluation.
+
+The structure of an if statement is as follows (line numbers are added for reference):
+
+1 if (condition 1 is met)
+
+2 {
+
+3 do Task A
